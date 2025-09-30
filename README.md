@@ -136,9 +136,8 @@ O portfólio é totalmente responsivo e funciona perfeitamente em:
 
 ## 📞 Contato
 
-- **Nome**: Layson Batista
 - **GitHub**: [LaysonBatista](https://github.com/LaysonBatista)
-- **LinkedIn**: [Seu LinkedIn](https://www.linkedin.com/in/layson-souza-batista-353228279/)
+- **LinkedIn**: [Meu LinkedIn](https://www.linkedin.com/in/layson-souza-batista-353228279/)
 - **Email**: layson.sbatista@gmail.com
 
 ---
