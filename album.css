@@ -279,7 +279,7 @@ body.light-theme p.text-muted{
   color: var(--dark-text-primary) !important;
 }
 
-body.bg-light-theme p.lead.text-muted{
+body.light-theme p{
   color: var(--dark-tertiary) !important;
 }
 
