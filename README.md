@@ -30,20 +30,6 @@ Um portfólio web responsivo e moderno para exibir projetos desenvolvidos durant
 - **Bootstrap 4**: Framework CSS para responsividade e componentes
 - **LocalStorage**: Persistência da preferência de tema do usuário
 
-## 🚀 Como Usar
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/portfolio.git
-   ```
-
-2. **Navegue até o diretório**:
-   ```bash
-   cd portfolio
-   ```
-
-3. **Abra o arquivo index.html** em seu navegador preferido
-
 ## 📂 Estrutura do Projeto
 
 ```
