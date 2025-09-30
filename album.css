@@ -1,0 +1,285 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+  
+  /* Tema escuro - cores baseadas em #0f2f4b */
+  --dark-primary: #0f2f4b;
+  --dark-secondary: #0a1f33; /* Versão mais escura */
+  --dark-tertiary: #060a0e;/*#183d6b;*/ /* Versão mais clara */
+  --dark-surface: #071525; /* Fundo mais escuro */
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #e0e0e0;
+  --dark-text-muted: #a0a0a0;
+  --dark-border: #1a3c5e;
+  --dark-card-bg: #102a42;
+  --dark-button-primary: #1d4e89;
+  --dark-button-secondary: #2c3e50;
+  
+  /* Tema claro */
+  --light-primary: #007bff;
+  --light-secondary: #6c757d;
+  --light-tertiary: #f8f9fa;
+  --light-surface: #ffffff;
+  --light-text-primary: #212529;
+  --light-text-secondary: #495057;
+  --light-text-muted: #ffffff;
+  --light-border: #dee2e6;
+  --light-card-bg: #ffffff;
+  --light-button-primary: #007bff;
+  --light-button-secondary: #6c757d;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: var(--dark-tertiary);
+  color: var(--dark-text-primary);
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .25); }
+
+.bg-custom { background-color: var(--dark-primary) !important; }
+
+/* Aplicando tema escuro aos elementos principais */
+body {
+  background-color: var(--dark-surface);
+  color: var(--dark-text-primary);
+}
+
+header {
+  background-color: var(--dark-primary);
+}
+
+main {
+  background-color: var(--dark-surface);
+}
+
+footer {
+  background-color: var(--dark-secondary);
+  color: var(--dark-text-secondary);
+}
+
+/* Tema escuro para links e textos */
+a {
+  color: #5aafff; /* Azul mais claro para melhor contraste */
+}
+
+a:hover {
+  color: #8cc7ff;
+}
+
+.text-muted {
+  color: #b8b8b8 !important; /* Cinza mais claro para melhor contraste */
+  margin-left: 20px;
+}
+
+.text-white {
+  color: var(--dark-text-primary) !important;
+}
+
+/* Ajustes para melhor legibilidade */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text-primary);
+}
+
+p {
+  color: var(--dark-text-secondary);
+}
+
+small {
+  color: var(--dark-text-muted);
+}
+
+/* Personalização de elementos UI */
+.card {
+  background-color: var(--dark-card-bg);
+  border: 1px solid var(--dark-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(178, 75, 56, 0.3);
+  border-color: #b24b38;
+}
+
+.card-body {
+  background-color: var(--dark-card-bg);
+}
+
+.btn-primary {
+  background-color: var(--dark-button-primary);
+  border-color: var(--dark-button-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-tertiary);
+  border-color: var(--dark-tertiary);
+}
+
+.btn-secondary {
+  background-color: var(--dark-button-secondary);
+  border-color: var(--dark-button-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: #3d5166;
+  border-color: #3d5166;
+}
+
+.btn-outline-secondary {
+  color: #d0d0d0; /* Cor mais clara para melhor contraste */
+  border-color: #d0d0d0;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #b24b38;
+  border-color: #b24b38;
+  color: var(--dark-text-primary);
+  transform: scale(1.05);
+}
+
+.album {
+  background-color: var(--dark-surface);
+}
+
+.bg-light {
+  background-color: var(--dark-secondary) !important;
+}
+
+/* Ajustes adicionais para acessibilidade */
+.card-img-top {
+  border-bottom: 1px solid var(--dark-border);
+}
+
+/* Aumentar contraste para elementos interativos */
+button:focus, a:focus {
+  outline: 2px solid #5aafff;
+  outline-offset: 2px;
+}
+
+/* Melhorar visibilidade de bordas */
+.card, .jumbotron {
+  border: 1px solid var(--dark-border);
+}
+
+/* Tema Claro */
+body.light-theme {
+  background-color: var(--light-surface);
+  color: var(--light-text-primary);
+}
+
+body.light-theme h1.jumbotron-heading {
+  background-color: var(--light-tertiary);
+  color: var(--light-text-primary);
+  border-color: var(--light-border);
+}
+body.light-theme .jumbotron {
+  background-color: var(--light-tertiary);
+  color: var(--light-text-primary);
+  border-color: var(--light-border);
+}
+
+body.light-theme .bg-custom {
+  background-color: var(--light-primary) !important;
+}
+
+body.light-theme header {
+  background-color: var(--light-primary);
+}
+
+body.light-theme main {
+  background-color: var(--light-surface);
+}
+
+body.light-theme footer {
+  background-color: var(--light-secondary);
+  color: var(--light-text-secondary);
+}
+
+body.light-theme .card {
+  background-color: var(--light-card-bg);
+  border-color: var(--light-border);
+}
+
+body.light-theme .card-body {
+  background-color: var(--light-card-bg);
+}
+
+body.light-theme .btn-primary {
+  background-color: var(--light-button-primary);
+  border-color: var(--light-button-primary);
+}
+
+body.light-theme .btn-secondary {
+  background-color: var(--light-button-secondary);
+  border-color: var(--light-button-secondary);
+}
+
+body.light-theme .text-muted {
+  color: var(--dark-text-muted) !important;
+}
+
+body.light-theme .bg-light {
+  background-color: var(--light-tertiary) !important;
+}
+
+body.light-theme a {
+  color: #0056b3;
+}
+
+body.light-theme a:hover {
+  color: #004085;
+}
+
+body.light-theme .btn-outline-secondary {
+  color: var(--light-text-secondary);
+  border-color: var(--light-border);
+}
+
+body.light-theme .btn-outline-secondary:hover {
+  background-color: var(--light-secondary);
+  border-color: var(--light-secondary);
+  color: white;
+}
+
+body.light-theme p.card-text{
+  color: var(--dark-tertiary) !important;
+}
+
+body.light-theme p.text-muted{
+  color: var(--dark-text-primary) !important;
+}
+
+body.bg-light-theme p.lead.text-muted{
+  color: var(--dark-tertiary) !important;
+}
+
